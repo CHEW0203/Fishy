@@ -296,17 +296,9 @@ Fishy is an **MVP / academic / portfolio project**.
 
 ---
 
-## Screenshots
 
-*Screenshots will be added later.*
 
----
 
-## License
-
-No license has been selected yet.
-
----
 
 ## Acknowledgements
 
