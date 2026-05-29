@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
-import { router } from 'expo-router';
-import { useCallback, useEffect, useState } from 'react';
+import { router, useFocusEffect } from 'expo-router';
+import { useCallback, useState } from 'react';
 import { ActivityIndicator, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 import { LiquidGlassButton } from '@/components/LiquidGlassButton';
@@ -103,14 +103,6 @@ export default function DashboardScreen() {
     }
   }, [t]);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      loadSummary();
-    }, 0);
-
-    return () => clearTimeout(timeoutId);
-  }, [loadSummary]);
-
   const loadReminders = useCallback(async () => {
     setLoadingReminders(true);
     setReminderError(null);
@@ -133,13 +125,12 @@ export default function DashboardScreen() {
     }
   }, [t]);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
+  useFocusEffect(
+    useCallback(() => {
+      loadSummary();
       loadReminders();
-    }, 0);
-
-    return () => clearTimeout(timeoutId);
-  }, [loadReminders]);
+    }, [loadSummary, loadReminders]),
+  );
 
   const handleMarkDone = useCallback(
     async (reminder: Reminder) => {
@@ -299,6 +290,7 @@ export default function DashboardScreen() {
                           <Image
                             source={{ uri: fish.current_photo.photo_url }}
                             style={styles.fishCardImage}
+                            resizeMode="cover"
                           />
                         ) : (
                           <View style={styles.fishCardImagePlaceholder}>
@@ -362,6 +354,7 @@ export default function DashboardScreen() {
                       <Image
                         source={{ uri: summary.longestKeptFish.current_photo.photo_url }}
                         style={styles.longestKeptAvatarImage}
+                        resizeMode="cover"
                       />
                     ) : (
                       <Ionicons name="fish" size={28} color={colors.primaryLighter} />
@@ -714,7 +707,6 @@ const styles = StyleSheet.create({
   },
   fishCardImage: {
     height: 124,
-    resizeMode: 'cover',
     width: '100%',
   },
   fishCardImagePlaceholder: {
@@ -855,7 +847,6 @@ const styles = StyleSheet.create({
   },
   longestKeptAvatarImage: {
     height: '100%',
-    resizeMode: 'cover',
     width: '100%',
   },
   longestBubble1: {

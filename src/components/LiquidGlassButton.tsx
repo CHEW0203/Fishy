@@ -62,7 +62,7 @@ export function LiquidGlassButton({
       accessibilityRole="button"
       accessible
     >
-      <View style={[styles.sheen, radiusStyle]} pointerEvents="none" />
+      <View style={[styles.sheen, radiusStyle, { pointerEvents: 'none' }]} />
       <View style={styles.content}>
         {!loading && leftIcon}
         {loading ? (

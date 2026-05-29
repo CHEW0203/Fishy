@@ -447,7 +447,6 @@ const styles = StyleSheet.create({
   cardThumbnail: {
     borderRadius: 12,
     height: 76,
-    resizeMode: 'cover',
     width: 76,
   },
   container: {

@@ -37,7 +37,7 @@ export function FishCard({ fish, onPress }: FishCardProps) {
       activeOpacity={0.85}
     >
       {photoUrl ? (
-        <Image source={{ uri: photoUrl }} style={styles.photo} />
+        <Image source={{ uri: photoUrl }} style={styles.photo} resizeMode="cover" />
       ) : (
         <View style={styles.photoPlaceholder}>
           <Ionicons name="fish-outline" size={28} color={colors.primary} />
@@ -120,7 +120,6 @@ const styles = StyleSheet.create({
   photo: {
     borderRadius: 12,
     height: 86,
-    resizeMode: 'cover',
     width: 86,
   },
   species: {
