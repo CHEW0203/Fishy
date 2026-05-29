@@ -104,3 +104,9 @@ database/seed/species_images/upload_failed_rows.json
 
 # Optional audit scratch docs
 AUDIT_PHASE22A.md
+
+# Internal AI workflow documents
+CLAUDE.md
+AGENTS.md
+Fishy_PROJECT_RULES.md
+Fishy_TECHNICAL_PLAN.md
