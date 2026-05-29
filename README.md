@@ -273,6 +273,115 @@ Fishy is an **MVP / academic / portfolio project**.
 
 ---
 
+## Web Deployment (Vercel)
+
+> **Important:** This deploys the **browser web version** of Fishy. It runs in a standard web browser and does **not** install as a native iOS or Android app. Camera/photo features may behave differently or be unavailable compared to the native app.
+
+### How it works
+
+Expo's `expo export -p web` command builds a static site into `dist/`. Vercel serves this static output and rewrites all routes to `/` so Expo Router's client-side navigation works correctly.
+
+### Vercel project settings
+
+| Setting | Value |
+|---|---|
+| Framework Preset | **Other** |
+| Build Command | `npx expo export -p web` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
+
+### Required environment variables (set in Vercel dashboard)
+
+| Variable | Description |
+|---|---|
+| `EXPO_PUBLIC_SUPABASE_URL` | Your Supabase project URL (`https://xxxx.supabase.co`) |
+| `EXPO_PUBLIC_SUPABASE_ANON_KEY` | Your Supabase anon/public key (safe to expose in the browser) |
+
+> Do **not** add `SUPABASE_SERVICE_ROLE_KEY`. The app never needs it.
+
+### Deploy steps
+
+1. Push your repo to GitHub.
+2. Import the repo in [vercel.com](https://vercel.com/) → **Add New Project**.
+3. Set Framework Preset to **Other**.
+4. Override Build Command: `npx expo export -p web`
+5. Override Output Directory: `dist`
+6. Add the two environment variables above under **Settings → Environment Variables**.
+7. Click **Deploy**.
+
+After deploy, Vercel gives you a public HTTPS URL you can open on any device, including your phone, even when your computer is off.
+
+### Limitations of the web version
+
+- **Not a native app** — runs in a browser, not installed on the home screen (PWA install is possible but not configured).
+- **Camera/Scan flow** — `expo-camera` has limited browser support; the scan tab may not function reliably on mobile browsers.
+- **Photo upload** — `expo-image-picker` falls back to the browser's `<input type="file">` on web, which works but differs from the native picker.
+- **Animations** — `react-native-reanimated` web support is partial; some animations may be reduced or absent.
+- **Liquid-glass effects** — `expo-glass-effect` may not render on all browsers.
+- **Language persistence** — AsyncStorage works on web via localStorage, so language preference is preserved per browser.
+
+---
+
+## iOS Deployment (EAS Build)
+
+Fishy uses [EAS Build](https://docs.expo.dev/build/introduction/) for iOS builds. Local iOS builds on Windows are not possible — EAS cloud build is required.
+
+### Prerequisites
+
+- An **Apple Developer account** ($99/year) is required to sign iOS builds for physical device installation and TestFlight.
+- Install and authenticate the EAS CLI:
+
+  ```bash
+  npx eas-cli@latest login
+  npx eas-cli@latest whoami
+  npx eas-cli@latest build:configure
+  ```
+
+- Set EAS environment variables (replaces local `.env.local` for cloud builds):
+
+  ```bash
+  npx eas-cli@latest env:create --name EXPO_PUBLIC_SUPABASE_URL --value "your-url" --environment preview
+  npx eas-cli@latest env:create --name EXPO_PUBLIC_SUPABASE_ANON_KEY --value "your-anon-key" --environment preview
+  ```
+
+  > Only use the public **anon key**. Never add the service role key.
+
+### Build profiles (eas.json)
+
+| Profile | Purpose |
+|---|---|
+| `development` | Custom dev client for physical iPhone (hot reload, dev tools) |
+| `development-simulator` | iOS Simulator build — macOS only, not useful on Windows |
+| `preview` | Internal distribution build for physical iPhone testing (no dev tools) |
+| `production` | App Store / TestFlight build |
+
+### Option A — Development build on your iPhone
+
+```bash
+npx eas-cli@latest build -p ios --profile development
+```
+
+EAS will ask to register your device and manage credentials. Once the build finishes, open the provided URL on your iPhone and install the `.ipa`.
+
+### Option B — Preview (internal distribution) build
+
+```bash
+npx eas-cli@latest build -p ios --profile preview
+```
+
+Same as above but without the dev client — closer to a release build, still installable via the EAS URL.
+
+### Option C — TestFlight (beta testing)
+
+```bash
+npx eas-cli@latest build -p ios --profile production
+npx eas-cli@latest submit -p ios
+```
+
+Requires App Store Connect setup and an active Apple Developer Program membership.
+
+---
+
 ## Future Improvements
 
 - Production push notifications (currently in-app only).

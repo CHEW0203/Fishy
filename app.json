@@ -8,7 +8,9 @@
     "scheme": "fishy",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "com.chew0203.fishy",
+      "supportsTablet": false,
+      "icon": "./assets/images/icon.png"
     },
     "android": {
       "adaptiveIcon": {
@@ -30,6 +32,12 @@
         {
           "cameraPermission": "Fishy needs camera access so you can take a photo before adding a fish.",
           "microphonePermission": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Fishy needs access to your photo library so you can choose an existing photo for your fish."
         }
       ],
       [
