@@ -120,6 +120,16 @@ function getBadgeTextStyle(level: CompatibilityLevel) {
   return styles.compatBadgeTextLight;
 }
 
+// Persists across focus cycles on web so resetScanSession can trust it without
+// re-prompting the browser on every tab switch.
+let webCameraGranted = false;
+
+function isMobileWeb(): boolean {
+  if (Platform.OS !== 'web') return false;
+  if (typeof navigator === 'undefined') return false;
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
 async function requestWebCameraAccess(): Promise<boolean> {
   if (typeof navigator === 'undefined' || !navigator.mediaDevices?.getUserMedia) {
     return false;
@@ -129,6 +139,7 @@ async function requestWebCameraAccess(): Promise<boolean> {
 
   try {
     stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+    webCameraGranted = true;
     return true;
   } catch (error) {
     console.error('[Fishy Scan] web camera access failed:', error);
@@ -191,8 +202,12 @@ export default function ScanScreen() {
       : permission?.granted === true || hasCameraAccess;
 
   const resetScanSession = useCallback(() => {
-    // Trust both the hook ref and local access ref to avoid stale-hook false-negatives on web.
-    const granted = permissionRef.current?.granted === true || hasCameraAccessRef.current === true;
+    // On web, also check the module-level webCameraGranted flag because the expo
+    // permission hook stays stale and hasCameraAccessRef resets to false on unmount.
+    const granted =
+      permissionRef.current?.granted === true ||
+      hasCameraAccessRef.current === true ||
+      (Platform.OS === 'web' && webCameraGranted);
     setHasCameraAccess(granted);
     setScanStep(granted ? 'camera' : 'permission');
     setCapturedPhotoUri(null);
@@ -601,7 +616,13 @@ export default function ScanScreen() {
         <CameraView
           ref={cameraRef}
           style={styles.camera}
-          facing={Platform.OS === 'web' ? 'front' : 'back'}
+          facing={
+            Platform.OS === 'web'
+              ? isMobileWeb()
+                ? 'back'   // mobile browser → rear camera for fish photos
+                : 'front'  // desktop browser → webcam (typically only front available)
+              : 'back'     // native iOS/Android → back camera
+          }
           onCameraReady={() => setCameraReady(true)}
         >
           <View style={styles.cameraOverlay}>
