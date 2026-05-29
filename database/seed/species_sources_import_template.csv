@@ -1,0 +1,2 @@
+scientific_name,source_name,source_url,source_type,fields_supported,notes,retrieved_at
+# EXAMPLE ROW (delete before import): Exampleus fishus,FishBase,https://www.fishbase.se/summary/Exampleus-fishus.html,scientific_database,"scientific_name,adult_size_max_cm,temperature_min_c",,"2026-05-27"

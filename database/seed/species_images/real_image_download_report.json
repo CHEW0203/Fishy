@@ -1,0 +1,371 @@
+{
+  "summary": {
+    "total": 62,
+    "already_exists": 5,
+    "failed": 51,
+    "downloaded": 6
+  },
+  "results": [
+    {
+      "species_key": "betta_species",
+      "status": "already_exists",
+      "local_file_path": "database/seed/species_images/generated/real/betta_species.jpg"
+    },
+    {
+      "species_key": "peaceful-betta_species",
+      "status": "already_exists",
+      "local_file_path": "database/seed/species_images/generated/real/peaceful-betta_species.jpg"
+    },
+    {
+      "species_key": "snakehead-betta_species",
+      "status": "already_exists",
+      "local_file_path": "database/seed/species_images/generated/real/snakehead-betta_species.jpg"
+    },
+    {
+      "species_key": "common-guppy_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Poecilia_reticulata.jpg"
+    },
+    {
+      "species_key": "endlers-livebearer_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Campoma_Bridge_number_28_Poecilia_Wingei.jpg"
+    },
+    {
+      "species_key": "sailfin-molly_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Molly.jpg"
+    },
+    {
+      "species_key": "giant-sailfin-molly_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/giant-sailfin-molly_species.jpg"
+    },
+    {
+      "species_key": "platy_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/platy_species.jpg"
+    },
+    {
+      "species_key": "variatus-platy_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/variatus-platy_species.jpg"
+    },
+    {
+      "species_key": "swordtail_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/swordtail_species.jpg"
+    },
+    {
+      "species_key": "freshwater-halfbeak_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Dermogenys.jpg"
+    },
+    {
+      "species_key": "wrestling-halfbeak_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Hemirhamphodon_pogonognathus01.jpg"
+    },
+    {
+      "species_key": "dwarf-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Colisa_lalia_-_side_%28aka%29.jpg"
+    },
+    {
+      "species_key": "honey-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Colisasota_male.jpg"
+    },
+    {
+      "species_key": "pearl-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Osphronemidae_Trichopodus_leerii_4.jpg"
+    },
+    {
+      "species_key": "moonlight-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Trichopodus_microlepis_-_Karlsruhe_Zoo_01.jpg"
+    },
+    {
+      "species_key": "three-spot-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Trichopodus_trichopterus_%283_spot_gourami%2C_Philippines%29_01.jpg"
+    },
+    {
+      "species_key": "snakeskin-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Trichopodus_pectoralis_53635711.jpg"
+    },
+    {
+      "species_key": "croaking-gourami_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Trichopsis_vittata_%28USGS%29.jpg"
+    },
+    {
+      "species_key": "neon-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Neon_tetra_%28Paracheirodon_innesi%29.png"
+    },
+    {
+      "species_key": "cardinal-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Cardinal_tetra.jpg"
+    },
+    {
+      "species_key": "black-neon-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hyphessobrycon_herbertaxelrodi.jpg"
+    },
+    {
+      "species_key": "ember-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Hyphessobrycon_amandae_%28Amber_tetra%29.jpg"
+    },
+    {
+      "species_key": "glowlight-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Hemigrammus_erythrozonus.jpg"
+    },
+    {
+      "species_key": "rummy-nose-tetra_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Hemigrammus_rhodostomus.jpg"
+    },
+    {
+      "species_key": "tiger-barb_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Puntius_tetrazona_%28aka%29.jpg"
+    },
+    {
+      "species_key": "cherry-barb_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Male_Cherry_Barb_700.jpg"
+    },
+    {
+      "species_key": "harlequin-rasbora_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Harlequin_Rasbora.jpg"
+    },
+    {
+      "species_key": "chili-rasbora_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Boraras_brigittae.jpg"
+    },
+    {
+      "species_key": "celestial-pearl-danio_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Danio_Margaritatus.jpg"
+    },
+    {
+      "species_key": "zebra-danio_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Brachydanio_rerio.jpg"
+    },
+    {
+      "species_key": "angelfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pterophyllum_scalare.jpg"
+    },
+    {
+      "species_key": "discus_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Acara_disco.jpg"
+    },
+    {
+      "species_key": "german-blue-ram_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Mikrogeophagus_ramirezi.jpg"
+    },
+    {
+      "species_key": "oscar_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Astronotus_ocellatus.jpg"
+    },
+    {
+      "species_key": "bronze-corydoras_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/1_Corydoras_aeneus.JPG"
+    },
+    {
+      "species_key": "bristlenose-pleco_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Ancistrus_cirrhosus.jpg"
+    },
+    {
+      "species_key": "zebra-pleco_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Hypancistrus_zebra4305.jpg"
+    },
+    {
+      "species_key": "clown-loach_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/A_clown_loach.jpg"
+    },
+    {
+      "species_key": "kuhli-loach_species",
+      "status": "already_exists",
+      "local_file_path": "database/seed/species_images/generated/real/kuhli-loach_species.jpg"
+    },
+    {
+      "species_key": "asian-arowana_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Arowana_fish_%2837090442524%29.jpg"
+    },
+    {
+      "species_key": "silver-arowana_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Baltimore_Aquarium_-_Silver_arowana_-_1.jpg"
+    },
+    {
+      "species_key": "silver-datnoid_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Datnioides_polota.jpg"
+    },
+    {
+      "species_key": "peacock-bass_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Cichla_ocellaris_185311182.jpg"
+    },
+    {
+      "species_key": "motoro-stingray_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Fish_fauna_from_R%C3%ADo_Pilcomayo_National_Park_%281_of_7%29.png"
+    },
+    {
+      "species_key": "freshwater-archerfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/2017-07-02_AT_Wien_13_Hietzing%2C_Tiergarten_Sch%C3%B6nbrunn%2C_Toxotes_microlepis_%2849887459182%29.jpg"
+    },
+    {
+      "species_key": "banded-archerfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Toxotes_jaculatrix%2C_%28banded_archerfish_or_riflefish%29_-_Museon_-_Omniversum%2C_the_Hague%2C_the_Netherlands.jpg"
+    },
+    {
+      "species_key": "common-goldfish_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/common-goldfish_species.jpg"
+    },
+    {
+      "species_key": "koi_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Abel_Koi.jpg"
+    },
+    {
+      "species_key": "ocellaris-clownfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Amphiprion_ocellaris.jpg"
+    },
+    {
+      "species_key": "percula-clownfish_species",
+      "status": "already_exists",
+      "local_file_path": "database/seed/species_images/generated/real/percula-clownfish_species.jpg"
+    },
+    {
+      "species_key": "tomato-clownfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Pez_payaso_tomate_%28Amphiprion_frenatus%29_en_una_an%C3%A9mona_magn%C3%ADfica_%28Heteractis_magnifica%29%2C_Anilao%2C_Filipinas%2C_2023-08-22%2C_DD_207.jpg"
+    },
+    {
+      "species_key": "maroon-clownfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Maroon_Clown_Fish444.jpg"
+    },
+    {
+      "species_key": "clarkii-clownfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Amphiprion_Clarkii_1.jpg"
+    },
+    {
+      "species_key": "blue-green-chromis_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Blue-green_puller.jpg"
+    },
+    {
+      "species_key": "banggai-cardinalfish_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pterapogon_kauderni.jpg"
+    },
+    {
+      "species_key": "yellow-tang_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Zebrasoma_flavescens.jpg"
+    },
+    {
+      "species_key": "blue-tang_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Paracanthurus_hepatus.jpg"
+    },
+    {
+      "species_key": "firefish-goby_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Nemateleotris_magnifica.jpg"
+    },
+    {
+      "species_key": "mandarin-dragonet_species",
+      "status": "downloaded",
+      "local_file_path": "database/seed/species_images/generated/real/mandarin-dragonet_species.jpg"
+    },
+    {
+      "species_key": "giant-snakehead-toman_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Channa_micropeltes_-_T%C3%AAte_de_serpent_-_Aqua_Porte_Dor%C3%A9e_01.JPG"
+    },
+    {
+      "species_key": "striped-snakehead-haruan_species",
+      "status": "failed",
+      "error": "HTTP 429",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Channa_striata.jpg"
+    }
+  ]
+}

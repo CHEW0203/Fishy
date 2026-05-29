@@ -1,0 +1,106 @@
+# ──────────────────────────────────────────────
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.crt
+*.cer
+*.pfx
+*.p7b
+
+# Metro
+.metro-health-check*
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+*.err.log
+logs/
+
+# PID
+*.pid
+*pid.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+*.bak
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.cursor/
+
+# Env
+.env
+.env.*
+!.env.example
+.env.local
+.env*.local
+
+# EAS / Supabase local
+.eas/
+credentials.json
+supabase/.branches/
+supabase/.temp/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated native folders
+/ios
+/android
+
+# Pipeline runtime state (data preserved in *_assets_uploaded.json)
+database/seed/species_images/python_upload_progress.json
+database/seed/species_images/upload_failed_rows.json
+# ──────────────────────────────────────────────
+
+# Local generated species image binaries
+database/seed/species_images/generated/ai/*.png
+database/seed/species_images/generated/real/*.jpg
+database/seed/species_images/generated/real/*.jpeg
+database/seed/species_images/generated/real/*.png
+
+# Large future dataset / local research dataset
+database/seed/large_species_dataset/
+
+# Local pipeline reports/progress that are not required for app runtime
+database/seed/species_images/python_upload_progress.json
+database/seed/species_images/upload_failed_rows.json
+
+# Optional audit scratch docs
+AUDIT_PHASE22A.md

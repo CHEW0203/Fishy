@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-05-28T16:12:48Z",
+  "finishedAt": "2026-05-28T16:17:26Z",
+  "bucket": "species-images",
+  "bucket_status": "exists",
+  "totalRows": 303,
+  "uploadedThisRun": 300,
+  "skippedAlreadyUploaded": 3,
+  "failedThisRun": 0,
+  "publicUrlCount": 303,
+  "pendingCount": 0,
+  "failedSpeciesKeys": [],
+  "failures": []
+}

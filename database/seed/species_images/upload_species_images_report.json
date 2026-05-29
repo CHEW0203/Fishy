@@ -1,0 +1,1533 @@
+{
+  "startedAt": "2026-05-28T16:06:52.522Z",
+  "finishedAt": "2026-05-28T16:06:52.990Z",
+  "bucket": "species-images",
+  "bucket_status": "check_failed",
+  "bucket_error": "HTTP 400: {\"statusCode\":\"404\",\"error\":\"Bucket not found\",\"message\":\"Bucket not found\"}",
+  "concurrency": 1,
+  "delayMs": 200,
+  "totalAssets": 303,
+  "successfulUploads": 0,
+  "uploadedThisRun": 0,
+  "skippedAlreadyUploaded": 0,
+  "failedUploads": 303,
+  "pendingUploads": 303,
+  "publicUrlCount": 0,
+  "failures": [
+    {
+      "species_key": "betta_species",
+      "storage_path": "real/betta_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "halfmoon-betta_strain",
+      "storage_path": "ai/halfmoon-betta_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "plakat-betta_strain",
+      "storage_path": "ai/plakat-betta_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "crowntail-betta_strain",
+      "storage_path": "ai/crowntail-betta_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "veiltail-betta_strain",
+      "storage_path": "ai/veiltail-betta_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dumbo-betta_strain",
+      "storage_path": "ai/dumbo-betta_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "koi-betta_morph",
+      "storage_path": "ai/koi-betta_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "galaxy-betta_morph",
+      "storage_path": "ai/galaxy-betta_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dragon-scale-betta_morph",
+      "storage_path": "ai/dragon-scale-betta_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "copper-betta_morph",
+      "storage_path": "ai/copper-betta_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "samurai-betta_morph",
+      "storage_path": "ai/samurai-betta_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "peaceful-betta_species",
+      "storage_path": "real/peaceful-betta_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "slender-betta_species",
+      "storage_path": "ai/slender-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "akar-betta_species",
+      "storage_path": "ai/akar-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "iban-betta_species",
+      "storage_path": "ai/iban-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "snakehead-betta_species",
+      "storage_path": "real/snakehead-betta_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "browns-betta_species",
+      "storage_path": "ai/browns-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "spotfin-betta_species",
+      "storage_path": "ai/spotfin-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "apollo-betta_species",
+      "storage_path": "ai/apollo-betta_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "common-guppy_species",
+      "storage_path": "ai/common-guppy_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "endlers-livebearer_species",
+      "storage_path": "ai/endlers-livebearer_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "full-red-guppy_strain",
+      "storage_path": "ai/full-red-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "albino-full-red-guppy_strain",
+      "storage_path": "ai/albino-full-red-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "24k-gold-guppy_strain",
+      "storage_path": "ai/24k-gold-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-grass-guppy_strain",
+      "storage_path": "ai/blue-grass-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-grass-guppy_strain",
+      "storage_path": "ai/red-grass-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "moscow-blue-guppy_strain",
+      "storage_path": "ai/moscow-blue-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "moscow-black-guppy_strain",
+      "storage_path": "ai/moscow-black-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "japan-blue-guppy_strain",
+      "storage_path": "ai/japan-blue-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tuxedo-guppy_strain",
+      "storage_path": "ai/tuxedo-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "half-black-red-guppy_strain",
+      "storage_path": "ai/half-black-red-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-dragon-guppy_strain",
+      "storage_path": "ai/red-dragon-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dumbo-ear-guppy_strain",
+      "storage_path": "ai/dumbo-ear-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "koi-guppy_strain",
+      "storage_path": "ai/koi-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "snakeskin-guppy_strain",
+      "storage_path": "ai/snakeskin-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "metal-head-guppy_strain",
+      "storage_path": "ai/metal-head-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "platinum-white-guppy_strain",
+      "storage_path": "ai/platinum-white-guppy_strain.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-molly_variety",
+      "storage_path": "ai/black-molly_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sailfin-molly_species",
+      "storage_path": "ai/sailfin-molly_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "giant-sailfin-molly_species",
+      "storage_path": "real/giant-sailfin-molly_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "balloon-molly_variety",
+      "storage_path": "ai/balloon-molly_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dalmatian-molly_variety",
+      "storage_path": "ai/dalmatian-molly_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "lyretail-molly_variety",
+      "storage_path": "ai/lyretail-molly_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "golden-molly_variety",
+      "storage_path": "ai/golden-molly_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "platy_species",
+      "storage_path": "real/platy_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "variatus-platy_species",
+      "storage_path": "real/variatus-platy_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "mickey-mouse-platy_variety",
+      "storage_path": "ai/mickey-mouse-platy_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sunset-platy_variety",
+      "storage_path": "ai/sunset-platy_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "coral-red-platy_variety",
+      "storage_path": "ai/coral-red-platy_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "swordtail_species",
+      "storage_path": "real/swordtail_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-swordtail_variety",
+      "storage_path": "ai/red-swordtail_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pineapple-swordtail_variety",
+      "storage_path": "ai/pineapple-swordtail_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "hi-fin-swordtail_variety",
+      "storage_path": "ai/hi-fin-swordtail_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "freshwater-halfbeak_species",
+      "storage_path": "ai/freshwater-halfbeak_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "wrestling-halfbeak_species",
+      "storage_path": "ai/wrestling-halfbeak_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dwarf-gourami_species",
+      "storage_path": "ai/dwarf-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "powder-blue-dwarf-gourami_variety",
+      "storage_path": "ai/powder-blue-dwarf-gourami_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "flame-dwarf-gourami_variety",
+      "storage_path": "ai/flame-dwarf-gourami_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "honey-gourami_species",
+      "storage_path": "ai/honey-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pearl-gourami_species",
+      "storage_path": "ai/pearl-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "moonlight-gourami_species",
+      "storage_path": "ai/moonlight-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "three-spot-gourami_species",
+      "storage_path": "ai/three-spot-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-gourami_variety",
+      "storage_path": "ai/blue-gourami_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "gold-gourami_variety",
+      "storage_path": "ai/gold-gourami_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "opaline-gourami_variety",
+      "storage_path": "ai/opaline-gourami_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "snakeskin-gourami_species",
+      "storage_path": "ai/snakeskin-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "croaking-gourami_species",
+      "storage_path": "ai/croaking-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sparkling-gourami_species",
+      "storage_path": "ai/sparkling-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "giant-gourami_species",
+      "storage_path": "ai/giant-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "chocolate-gourami_species",
+      "storage_path": "ai/chocolate-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "licorice-gourami_species",
+      "storage_path": "ai/licorice-gourami_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "climbing-perch-puyu_species",
+      "storage_path": "ai/climbing-perch-puyu_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "neon-tetra_species",
+      "storage_path": "ai/neon-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "cardinal-tetra_species",
+      "storage_path": "ai/cardinal-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-neon-tetra_species",
+      "storage_path": "ai/green-neon-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-neon-tetra_species",
+      "storage_path": "ai/black-neon-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ember-tetra_species",
+      "storage_path": "ai/ember-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "glowlight-tetra_species",
+      "storage_path": "ai/glowlight-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rummy-nose-tetra_species",
+      "storage_path": "ai/rummy-nose-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "brilliant-rummy-nose-tetra_species",
+      "storage_path": "ai/brilliant-rummy-nose-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-widow-tetra_species",
+      "storage_path": "ai/black-widow-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "white-skirt-tetra_variety",
+      "storage_path": "ai/white-skirt-tetra_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "serpae-tetra_species",
+      "storage_path": "ai/serpae-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "lemon-tetra_species",
+      "storage_path": "ai/lemon-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "buenos-aires-tetra_species",
+      "storage_path": "ai/buenos-aires-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-eye-tetra_species",
+      "storage_path": "ai/red-eye-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "diamond-tetra_species",
+      "storage_path": "ai/diamond-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "emperor-tetra_species",
+      "storage_path": "ai/emperor-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-emperor-tetra_species",
+      "storage_path": "ai/black-emperor-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "congo-tetra_species",
+      "storage_path": "ai/congo-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "x-ray-tetra_species",
+      "storage_path": "ai/x-ray-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bloodfin-tetra_species",
+      "storage_path": "ai/bloodfin-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "silvertip-tetra_species",
+      "storage_path": "ai/silvertip-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "head-and-tail-light-tetra_species",
+      "storage_path": "ai/head-and-tail-light-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "penguin-tetra_species",
+      "storage_path": "ai/penguin-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-phantom-tetra_species",
+      "storage_path": "ai/black-phantom-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-phantom-tetra_species",
+      "storage_path": "ai/red-phantom-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bleeding-heart-tetra_species",
+      "storage_path": "ai/bleeding-heart-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rosy-tetra_species",
+      "storage_path": "ai/rosy-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "flame-tetra_species",
+      "storage_path": "ai/flame-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-fire-tetra_species",
+      "storage_path": "ai/green-fire-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "gold-tetra_species",
+      "storage_path": "ai/gold-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ruby-tetra_species",
+      "storage_path": "ai/ruby-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "cochus-blue-tetra_species",
+      "storage_path": "ai/cochus-blue-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-tetra_variety",
+      "storage_path": "ai/blue-tetra_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "candy-cane-tetra_species",
+      "storage_path": "ai/candy-cane-tetra_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tiger-barb_species",
+      "storage_path": "ai/tiger-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-tiger-barb_variety",
+      "storage_path": "ai/green-tiger-barb_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "albino-tiger-barb_variety",
+      "storage_path": "ai/albino-tiger-barb_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "cherry-barb_species",
+      "storage_path": "ai/cherry-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rosy-barb_species",
+      "storage_path": "ai/rosy-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "golden-barb_species",
+      "storage_path": "ai/golden-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "odessa-barb_species",
+      "storage_path": "ai/odessa-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "checker-barb_species",
+      "storage_path": "ai/checker-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "denison-barb_species",
+      "storage_path": "ai/denison-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tinfoil-barb_species",
+      "storage_path": "ai/tinfoil-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-tail-tinfoil-barb_variety",
+      "storage_path": "ai/red-tail-tinfoil-barb_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bala-shark_species",
+      "storage_path": "ai/bala-shark_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rainbow-shark_species",
+      "storage_path": "ai/rainbow-shark_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-tail-black-shark_species",
+      "storage_path": "ai/red-tail-black-shark_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "flying-fox_species",
+      "storage_path": "ai/flying-fox_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "siamese-algae-eater_species",
+      "storage_path": "ai/siamese-algae-eater_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "chinese-algae-eater_species",
+      "storage_path": "ai/chinese-algae-eater_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "spanner-barb_species",
+      "storage_path": "ai/spanner-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "lampam_species",
+      "storage_path": "ai/lampam_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tengas_species",
+      "storage_path": "ai/tengas_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "kelah-malaysian-mahseer_species",
+      "storage_path": "ai/kelah-malaysian-mahseer_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sebarau-hampala-barb_species",
+      "storage_path": "ai/sebarau-hampala-barb_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "silver-sharkminnow_species",
+      "storage_path": "ai/silver-sharkminnow_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "harlequin-rasbora_species",
+      "storage_path": "ai/harlequin-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "lambchop-rasbora_species",
+      "storage_path": "ai/lambchop-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "glowlight-rasbora_species",
+      "storage_path": "ai/glowlight-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "chili-rasbora_species",
+      "storage_path": "ai/chili-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "phoenix-rasbora_species",
+      "storage_path": "ai/phoenix-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dwarf-rasbora_species",
+      "storage_path": "ai/dwarf-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "strawberry-rasbora_species",
+      "storage_path": "ai/strawberry-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "scissortail-rasbora_species",
+      "storage_path": "ai/scissortail-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "brilliant-rasbora_species",
+      "storage_path": "ai/brilliant-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "clown-rasbora_species",
+      "storage_path": "ai/clown-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-tailed-rasbora_species",
+      "storage_path": "ai/red-tailed-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "emerald-dwarf-rasbora_species",
+      "storage_path": "ai/emerald-dwarf-rasbora_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "celestial-pearl-danio_species",
+      "storage_path": "ai/celestial-pearl-danio_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "zebra-danio_species",
+      "storage_path": "ai/zebra-danio_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "leopard-danio_variety",
+      "storage_path": "ai/leopard-danio_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pearl-danio_species",
+      "storage_path": "ai/pearl-danio_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "giant-danio_species",
+      "storage_path": "ai/giant-danio_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "glowlight-danio_species",
+      "storage_path": "ai/glowlight-danio_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "medaka_species",
+      "storage_path": "ai/medaka_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "platinum-medaka_variety",
+      "storage_path": "ai/platinum-medaka_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-medaka_variety",
+      "storage_path": "ai/black-medaka_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "gold-white-cloud-mountain-minnow_variety",
+      "storage_path": "ai/gold-white-cloud-mountain-minnow_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "white-cloud-mountain-minnow_species",
+      "storage_path": "ai/white-cloud-mountain-minnow_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "daisys-ricefish_species",
+      "storage_path": "ai/daisys-ricefish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "angelfish_species",
+      "storage_path": "ai/angelfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "altum-angelfish_species",
+      "storage_path": "ai/altum-angelfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "discus_species",
+      "storage_path": "ai/discus_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-diamond-discus_variety",
+      "storage_path": "ai/blue-diamond-discus_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pigeon-blood-discus_variety",
+      "storage_path": "ai/pigeon-blood-discus_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-melon-discus_variety",
+      "storage_path": "ai/red-melon-discus_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "german-blue-ram_species",
+      "storage_path": "ai/german-blue-ram_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bolivian-ram_species",
+      "storage_path": "ai/bolivian-ram_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "apistogramma-cacatuoides_species",
+      "storage_path": "ai/apistogramma-cacatuoides_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "apistogramma-agassizii_species",
+      "storage_path": "ai/apistogramma-agassizii_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "apistogramma-borellii_species",
+      "storage_path": "ai/apistogramma-borellii_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "kribensis_species",
+      "storage_path": "ai/kribensis_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "oscar_species",
+      "storage_path": "ai/oscar_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "albino-oscar_variety",
+      "storage_path": "ai/albino-oscar_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tiger-oscar_variety",
+      "storage_path": "ai/tiger-oscar_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "flowerhorn_hybrid",
+      "storage_path": "ai/flowerhorn_hybrid.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blood-parrot-cichlid_hybrid",
+      "storage_path": "ai/blood-parrot-cichlid_hybrid.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "severum_species",
+      "storage_path": "ai/severum_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-terror_species",
+      "storage_path": "ai/green-terror_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "jack-dempsey_species",
+      "storage_path": "ai/jack-dempsey_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "electric-blue-jack-dempsey_variety",
+      "storage_path": "ai/electric-blue-jack-dempsey_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "firemouth-cichlid_species",
+      "storage_path": "ai/firemouth-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "convict-cichlid_species",
+      "storage_path": "ai/convict-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "texas-cichlid_species",
+      "storage_path": "ai/texas-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "jewel-cichlid_species",
+      "storage_path": "ai/jewel-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "frontosa_species",
+      "storage_path": "ai/frontosa_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "yellow-lab-cichlid_species",
+      "storage_path": "ai/yellow-lab-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "electric-blue-hap_species",
+      "storage_path": "ai/electric-blue-hap_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-zebra-cichlid_species",
+      "storage_path": "ai/red-zebra-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "demasoni-cichlid_species",
+      "storage_path": "ai/demasoni-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "peacock-cichlid_species",
+      "storage_path": "ai/peacock-cichlid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bronze-corydoras_species",
+      "storage_path": "ai/bronze-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "albino-corydoras_variety",
+      "storage_path": "ai/albino-corydoras_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "peppered-corydoras_species",
+      "storage_path": "ai/peppered-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "panda-corydoras_species",
+      "storage_path": "ai/panda-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sterbai-corydoras_species",
+      "storage_path": "ai/sterbai-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "julii-corydoras_species",
+      "storage_path": "ai/julii-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "three-line-corydoras_species",
+      "storage_path": "ai/three-line-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pygmy-corydoras_species",
+      "storage_path": "ai/pygmy-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "salt-and-pepper-corydoras_species",
+      "storage_path": "ai/salt-and-pepper-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "skunk-corydoras_species",
+      "storage_path": "ai/skunk-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "adolfos-corydoras_species",
+      "storage_path": "ai/adolfos-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "orange-venezuelan-corydoras_species",
+      "storage_path": "ai/orange-venezuelan-corydoras_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "otocinclus-catfish_species",
+      "storage_path": "ai/otocinclus-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "glass-catfish_species",
+      "storage_path": "ai/glass-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pictus-catfish_species",
+      "storage_path": "ai/pictus-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "redtail-catfish_species",
+      "storage_path": "ai/redtail-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tiger-shovelnose-catfish_species",
+      "storage_path": "ai/tiger-shovelnose-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "iridescent-shark-catfish_species",
+      "storage_path": "ai/iridescent-shark-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "upside-down-catfish_species",
+      "storage_path": "ai/upside-down-catfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "featherfin-synodontis_species",
+      "storage_path": "ai/featherfin-synodontis_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bristlenose-pleco_species",
+      "storage_path": "ai/bristlenose-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "albino-bristlenose-pleco_variety",
+      "storage_path": "ai/albino-bristlenose-pleco_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "super-red-bristlenose-pleco_variety",
+      "storage_path": "ai/super-red-bristlenose-pleco_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "longfin-bristlenose-pleco_variety",
+      "storage_path": "ai/longfin-bristlenose-pleco_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "common-pleco_species",
+      "storage_path": "ai/common-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sailfin-pleco_species",
+      "storage_path": "ai/sailfin-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "clown-pleco_species",
+      "storage_path": "ai/clown-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rubber-lip-pleco_species",
+      "storage_path": "ai/rubber-lip-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "zebra-pleco_species",
+      "storage_path": "ai/zebra-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "gold-nugget-pleco_species",
+      "storage_path": "ai/gold-nugget-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-phantom-pleco_species",
+      "storage_path": "ai/blue-phantom-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-phantom-pleco_species",
+      "storage_path": "ai/green-phantom-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "royal-pleco_species",
+      "storage_path": "ai/royal-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "snowball-pleco_species",
+      "storage_path": "ai/snowball-pleco_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "clown-loach_species",
+      "storage_path": "ai/clown-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "kuhli-loach_species",
+      "storage_path": "real/kuhli-loach_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-kuhli-loach_species",
+      "storage_path": "ai/black-kuhli-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "zebra-loach_species",
+      "storage_path": "ai/zebra-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "yoyo-loach_species",
+      "storage_path": "ai/yoyo-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dwarf-chain-loach_species",
+      "storage_path": "ai/dwarf-chain-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "skunk-loach_species",
+      "storage_path": "ai/skunk-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "hillstream-loach_species",
+      "storage_path": "ai/hillstream-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "reticulated-hillstream-loach_species",
+      "storage_path": "ai/reticulated-hillstream-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "horseface-loach_species",
+      "storage_path": "ai/horseface-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "weather-loach_species",
+      "storage_path": "ai/weather-loach_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "asian-arowana_species",
+      "storage_path": "ai/asian-arowana_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "malaysian-golden-arowana_morph",
+      "storage_path": "ai/malaysian-golden-arowana_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "red-arowana_morph",
+      "storage_path": "ai/red-arowana_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "green-arowana_morph",
+      "storage_path": "ai/green-arowana_morph.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "silver-arowana_species",
+      "storage_path": "ai/silver-arowana_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-arowana_species",
+      "storage_path": "ai/black-arowana_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "jardini-arowana_species",
+      "storage_path": "ai/jardini-arowana_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "senegal-bichir_species",
+      "storage_path": "ai/senegal-bichir_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ornate-bichir_species",
+      "storage_path": "ai/ornate-bichir_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "delhezi-bichir_species",
+      "storage_path": "ai/delhezi-bichir_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "endlicheri-bichir_species",
+      "storage_path": "ai/endlicheri-bichir_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "rope-fish_species",
+      "storage_path": "ai/rope-fish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "clown-knifefish_species",
+      "storage_path": "ai/clown-knifefish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-ghost-knifefish_species",
+      "storage_path": "ai/black-ghost-knifefish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "fire-eel_species",
+      "storage_path": "ai/fire-eel_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "peacock-eel_species",
+      "storage_path": "ai/peacock-eel_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "spotted-gar_species",
+      "storage_path": "ai/spotted-gar_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "florida-gar_species",
+      "storage_path": "ai/florida-gar_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tiger-datnoid_species",
+      "storage_path": "ai/tiger-datnoid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "silver-datnoid_species",
+      "storage_path": "ai/silver-datnoid_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "peacock-bass_species",
+      "storage_path": "ai/peacock-bass_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "motoro-stingray_species",
+      "storage_path": "ai/motoro-stingray_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "freshwater-archerfish_species",
+      "storage_path": "ai/freshwater-archerfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "banded-archerfish_species",
+      "storage_path": "ai/banded-archerfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "common-goldfish_species",
+      "storage_path": "real/common-goldfish_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "comet-goldfish_variety",
+      "storage_path": "ai/comet-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "shubunkin-goldfish_variety",
+      "storage_path": "ai/shubunkin-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "fantail-goldfish_variety",
+      "storage_path": "ai/fantail-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "oranda-goldfish_variety",
+      "storage_path": "ai/oranda-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ranchu-goldfish_variety",
+      "storage_path": "ai/ranchu-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ryukin-goldfish_variety",
+      "storage_path": "ai/ryukin-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "telescope-goldfish_variety",
+      "storage_path": "ai/telescope-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "black-moor-goldfish_variety",
+      "storage_path": "ai/black-moor-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pearlscale-goldfish_variety",
+      "storage_path": "ai/pearlscale-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "lionhead-goldfish_variety",
+      "storage_path": "ai/lionhead-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bubble-eye-goldfish_variety",
+      "storage_path": "ai/bubble-eye-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "celestial-eye-goldfish_variety",
+      "storage_path": "ai/celestial-eye-goldfish_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "koi_species",
+      "storage_path": "ai/koi_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "kohaku-koi_variety",
+      "storage_path": "ai/kohaku-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "sanke-koi_variety",
+      "storage_path": "ai/sanke-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "showa-koi_variety",
+      "storage_path": "ai/showa-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ogon-koi_variety",
+      "storage_path": "ai/ogon-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "chagoi-koi_variety",
+      "storage_path": "ai/chagoi-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "shusui-koi_variety",
+      "storage_path": "ai/shusui-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "asagi-koi_variety",
+      "storage_path": "ai/asagi-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "utsuri-koi_variety",
+      "storage_path": "ai/utsuri-koi_variety.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "ocellaris-clownfish_species",
+      "storage_path": "ai/ocellaris-clownfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "percula-clownfish_species",
+      "storage_path": "real/percula-clownfish_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "tomato-clownfish_species",
+      "storage_path": "ai/tomato-clownfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "maroon-clownfish_species",
+      "storage_path": "ai/maroon-clownfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "clarkii-clownfish_species",
+      "storage_path": "ai/clarkii-clownfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-green-chromis_species",
+      "storage_path": "ai/blue-green-chromis_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-devil-damselfish_species",
+      "storage_path": "ai/blue-devil-damselfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "yellowtail-damselfish_species",
+      "storage_path": "ai/yellowtail-damselfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "banggai-cardinalfish_species",
+      "storage_path": "ai/banggai-cardinalfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "pajama-cardinalfish_species",
+      "storage_path": "ai/pajama-cardinalfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "yellow-tang_species",
+      "storage_path": "ai/yellow-tang_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "blue-tang_species",
+      "storage_path": "ai/blue-tang_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "royal-gramma_species",
+      "storage_path": "ai/royal-gramma_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "firefish-goby_species",
+      "storage_path": "ai/firefish-goby_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "mandarin-dragonet_species",
+      "storage_path": "real/mandarin-dragonet_species.jpg",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "cleaner-wrasse_species",
+      "storage_path": "ai/cleaner-wrasse_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "six-line-wrasse_species",
+      "storage_path": "ai/six-line-wrasse_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "flame-angelfish_species",
+      "storage_path": "ai/flame-angelfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "coral-beauty-angelfish_species",
+      "storage_path": "ai/coral-beauty-angelfish_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "yellow-watchman-goby_species",
+      "storage_path": "ai/yellow-watchman-goby_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "giant-snakehead-toman_species",
+      "storage_path": "ai/giant-snakehead-toman_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "striped-snakehead-haruan_species",
+      "storage_path": "ai/striped-snakehead-haruan_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "forest-snakehead_species",
+      "storage_path": "ai/forest-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "dwarf-snakehead_species",
+      "storage_path": "ai/dwarf-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "bleheri-snakehead_species",
+      "storage_path": "ai/bleheri-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "barca-snakehead_species",
+      "storage_path": "ai/barca-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "stewartii-snakehead_species",
+      "storage_path": "ai/stewartii-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    },
+    {
+      "species_key": "aurantimaculata-snakehead_species",
+      "storage_path": "ai/aurantimaculata-snakehead_species.png",
+      "upload_status": "not_attempted_bucket_unavailable"
+    }
+  ]
+}
