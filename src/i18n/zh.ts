@@ -166,6 +166,12 @@ export const zh: Record<string, string> = {
   'fishDetail.description': '描述',
   'fishDetail.statusLabel': '状态',
   'fishDetail.unknownSpecies': '未知鱼种',
+  'fishDetail.deleteFish': '删除鱼',
+  'fishDetail.deleteConfirmTitle': '要删除这条鱼吗？',
+  'fishDetail.deleteConfirmMessage': '这会从你的收藏中删除这条鱼的记录和照片历史。',
+  'fishDetail.deleteConfirmDelete': '删除',
+  'fishDetail.deleteError': '删除失败，请再试一次。',
+  'fishDetail.deleting': '删除中...',
 
   // ── Add Fish ─────────────────────────────────────────────────────────────────
   'addFish.title': '添加鱼',

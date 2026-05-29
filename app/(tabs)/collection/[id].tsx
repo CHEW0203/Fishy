@@ -24,7 +24,7 @@ import { colors } from '@/constants/colors';
 import { useI18n } from '@/i18n/I18nProvider';
 import { getCareLevelLabel, getDurationText, getStatusLabel, getWaterTypeLabel } from '@/i18n/formatters';
 import type { TFunction } from '@/i18n';
-import { getUserFishById, updateUserFish } from '@/services/fishService';
+import { deleteFishById, getUserFishById, updateUserFish } from '@/services/fishService';
 import { getFishPhotos } from '@/services/photoService';
 import type { FishPhoto, FishSpecies, FishStatus, UserFish } from '@/types';
 import { extractErrorMessage } from '@/utils/errors';
@@ -244,6 +244,9 @@ export default function FishDetailScreen() {
   const [timelineOpen, setTimelineOpen] = useState(false);
   const [enlargedPhoto, setEnlargedPhoto] = useState<FishPhoto | null>(null);
   const [timelineAnimation] = useState(() => new Animated.Value(0));
+  const [deleteConfirmVisible, setDeleteConfirmVisible] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   const refetch = useCallback(async () => {
     if (!id) {
@@ -392,6 +395,23 @@ export default function FishDetailScreen() {
       setStatusSaving(false);
     }
   }, [deathDate, endDateInput, fish, id, refetch, selectedStatus, statusNotes, t]);
+
+  const handleConfirmDelete = useCallback(async () => {
+    if (!id) return;
+    setIsDeleting(true);
+    setDeleteError(null);
+
+    try {
+      await deleteFishById(id);
+      setDeleteConfirmVisible(false);
+      router.back();
+    } catch (err) {
+      console.error('[Fishy][FishDetail] deleteFishById failed:', err);
+      setDeleteError(t('fishDetail.deleteError'));
+    } finally {
+      setIsDeleting(false);
+    }
+  }, [id, t]);
 
   if (loading) {
     return <LoadingSpinner label={t('fishDetail.loading')} />;
@@ -598,6 +618,23 @@ export default function FishDetailScreen() {
         </View>
 
         <SpeciesInfo species={fish.species} t={t} />
+
+        <View style={styles.deleteFishSection}>
+          {deleteError && (
+            <Text style={styles.deleteErrorText}>{deleteError}</Text>
+          )}
+          <TouchableOpacity
+            style={styles.deleteFishButton}
+            onPress={() => {
+              setDeleteError(null);
+              setDeleteConfirmVisible(true);
+            }}
+            activeOpacity={0.8}
+          >
+            <Ionicons name="trash-outline" size={18} color={colors.compatDanger} />
+            <Text style={styles.deleteFishButtonText}>{t('fishDetail.deleteFish')}</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
 
       <TouchableOpacity
@@ -721,6 +758,58 @@ export default function FishDetailScreen() {
               </View>
             </Pressable>
           )}
+        </Pressable>
+      </Modal>
+
+      <Modal
+        visible={deleteConfirmVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => {
+          if (!isDeleting) setDeleteConfirmVisible(false);
+        }}
+      >
+        <Pressable
+          style={styles.deleteModalOverlay}
+          onPress={() => {
+            if (!isDeleting) setDeleteConfirmVisible(false);
+          }}
+        >
+          <Pressable onPress={() => {}} style={styles.deleteModalCard}>
+            <View style={styles.deleteModalIconRow}>
+              <View style={styles.deleteModalIconBg}>
+                <Ionicons name="trash-outline" size={28} color={colors.compatDanger} />
+              </View>
+            </View>
+            <Text style={styles.deleteModalTitle}>{t('fishDetail.deleteConfirmTitle')}</Text>
+            {fish && (
+              <Text style={styles.deleteModalFishName}>{fish.name}</Text>
+            )}
+            <Text style={styles.deleteModalMessage}>{t('fishDetail.deleteConfirmMessage')}</Text>
+            {deleteError && (
+              <Text style={styles.deleteModalError}>{deleteError}</Text>
+            )}
+            <View style={styles.deleteModalActions}>
+              <TouchableOpacity
+                style={[styles.deleteModalBtn, styles.deleteModalCancelBtn]}
+                onPress={() => setDeleteConfirmVisible(false)}
+                disabled={isDeleting}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.deleteModalCancelText}>{t('common.cancel')}</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.deleteModalBtn, styles.deleteModalDeleteBtn, isDeleting && styles.deleteModalDeleteBtnDisabled]}
+                onPress={handleConfirmDelete}
+                disabled={isDeleting}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.deleteModalDeleteText}>
+                  {isDeleting ? t('fishDetail.deleting') : t('fishDetail.deleteConfirmDelete')}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </Pressable>
         </Pressable>
       </Modal>
     </View>
@@ -1239,5 +1328,129 @@ const styles = StyleSheet.create({
     marginTop: 8,
     paddingHorizontal: 10,
     paddingVertical: 4,
+  },
+  deleteFishSection: {
+    alignItems: 'center',
+    marginBottom: 8,
+    marginHorizontal: 16,
+    marginTop: 24,
+    paddingBottom: 8,
+  },
+  deleteFishButton: {
+    alignItems: 'center',
+    borderColor: 'rgba(231, 76, 60, 0.30)',
+    borderRadius: 12,
+    borderWidth: 1,
+    flexDirection: 'row',
+    gap: 8,
+    justifyContent: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    width: '100%',
+  },
+  deleteFishButtonText: {
+    color: colors.compatDanger,
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  deleteErrorText: {
+    color: colors.compatDanger,
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+  deleteModalOverlay: {
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    flex: 1,
+    justifyContent: 'center',
+    padding: 24,
+  },
+  deleteModalCard: {
+    alignItems: 'center',
+    backgroundColor: colors.surface,
+    borderColor: colors.border,
+    borderRadius: 20,
+    borderWidth: 1,
+    elevation: 12,
+    paddingHorizontal: 24,
+    paddingVertical: 28,
+    shadowColor: colors.glassShadow,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.14,
+    shadowRadius: 20,
+    width: '100%',
+  },
+  deleteModalIconRow: {
+    marginBottom: 16,
+  },
+  deleteModalIconBg: {
+    alignItems: 'center',
+    backgroundColor: 'rgba(231, 76, 60, 0.10)',
+    borderRadius: 32,
+    height: 56,
+    justifyContent: 'center',
+    width: 56,
+  },
+  deleteModalTitle: {
+    color: colors.text,
+    fontSize: 18,
+    fontWeight: '800',
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  deleteModalFishName: {
+    color: colors.primary,
+    fontSize: 16,
+    fontWeight: '700',
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  deleteModalMessage: {
+    color: colors.textSecondary,
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  deleteModalError: {
+    color: colors.compatDanger,
+    fontSize: 13,
+    lineHeight: 18,
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  deleteModalActions: {
+    flexDirection: 'row',
+    gap: 12,
+    width: '100%',
+  },
+  deleteModalBtn: {
+    alignItems: 'center',
+    borderRadius: 12,
+    flex: 1,
+    paddingVertical: 13,
+  },
+  deleteModalCancelBtn: {
+    backgroundColor: colors.aquariumLight,
+    borderColor: colors.border,
+    borderWidth: 1,
+  },
+  deleteModalCancelText: {
+    color: colors.text,
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  deleteModalDeleteBtn: {
+    backgroundColor: colors.compatDanger,
+  },
+  deleteModalDeleteBtnDisabled: {
+    opacity: 0.55,
+  },
+  deleteModalDeleteText: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    fontWeight: '700',
   },
 });

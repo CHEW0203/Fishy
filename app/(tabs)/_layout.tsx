@@ -16,6 +16,13 @@ const webFocusReset = Platform.select({
   },
 });
 
+// On web, Expo Router renders tabs in normal document flow so 'absolute'
+// doesn't pin the bar. We override to 'fixed' so it stays at the viewport bottom.
+const webTabBarPositionFix = Platform.select({
+  web: { position: 'fixed' as never },
+  default: {},
+});
+
 interface TabIconProps {
   name: SFSymbol;
   androidName: keyof typeof Ionicons.glyphMap;
@@ -73,6 +80,7 @@ export default function TabLayout() {
           shadowOffset: { width: 0, height: 10 },
           shadowOpacity: 0.16,
           shadowRadius: 24,
+          ...webTabBarPositionFix,
         },
         tabBarItemStyle: {
           borderRadius: 24,

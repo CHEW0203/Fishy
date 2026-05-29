@@ -166,6 +166,12 @@ export const en: Record<string, string> = {
   'fishDetail.description': 'Description',
   'fishDetail.statusLabel': 'Status',
   'fishDetail.unknownSpecies': 'Unknown species',
+  'fishDetail.deleteFish': 'Delete Fish',
+  'fishDetail.deleteConfirmTitle': 'Delete this fish?',
+  'fishDetail.deleteConfirmMessage': 'This will remove the fish record and its photo history from your collection.',
+  'fishDetail.deleteConfirmDelete': 'Delete',
+  'fishDetail.deleteError': 'Failed to delete fish. Please try again.',
+  'fishDetail.deleting': 'Deleting...',
 
   // ── Add Fish ─────────────────────────────────────────────────────────────────
   'addFish.title': 'Add Fish',
